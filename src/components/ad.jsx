@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Ad() {
     return (
-        <div>
+        <div className="ad">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <ins className="adsbygoogle"
                 style={{ display: "inline-block", width: "468px", height:"60px"}}

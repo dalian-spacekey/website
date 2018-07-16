@@ -1,9 +1,11 @@
 import React from "react";
+import Helmet from "react-helmet";
 
 class AboutPage extends React.Component {
     render() {
         return (
             <div className="contents">
+                <Helmet title="About | Spacekey" />
                 <h2>About</h2>
                 <h3>Name</h3>
                 <p>

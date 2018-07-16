@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 import Link from "gatsby-link";
 import get from "lodash/get"
 import Tags from "../components/tags";
@@ -16,9 +17,11 @@ const IndexPage = ({pathContext}) => {
     const { group, index, first, last } = pathContext;
     const previousUrl = index - 1 == 1 ? "" : (index - 1).toString();
     const nextUrl = (index + 1).toString();
+    const siteTitle = "Spacekey";
 
     return (
         <div className="contents">
+            <Helmet title={`${siteTitle}`} />
             {group.map(({ node }) => {
                 const title = get(node, "frontmatter.title") || node.fields.slug;
                 return (

@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from 'react-helmet'
 import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import Ad from "../components/ad";
@@ -9,6 +10,8 @@ const Tags = ({ pathContext, data }) => {
 
     return (
         <div className="titlelist">
+            <Helmet title={`${tag} | Spacekey`} />
+
             <h1>{tag}({totalCount})</h1>
             <ul className="titlelist">
                 {edges.map(({ node }) => {
