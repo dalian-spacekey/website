@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from 'react-helmet'
 import PropTypes from "prop-types";
 import Link from "gatsby-link";
-import Ad from "../components/ad";
+import AdSense from "react-adsense";
 
 const Tags = ({ pathContext, data }) => {
     const { tag } = pathContext;
@@ -24,7 +24,10 @@ const Tags = ({ pathContext, data }) => {
                 })}
             </ul>
 
-            <Ad />
+            <AdSense.Google
+                client="ca-pub-4343024996209944"
+                slot="2071710325"
+                format="auto" />
         </div>
     );
 };

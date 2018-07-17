@@ -2,7 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import get from "lodash/get"
 import Tags from "../components/tags";
-import Ad from "../components/ad";
+import AdSense from "react-adsense";
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -19,7 +19,10 @@ class BlogPostTemplate extends React.Component {
         </div>
         <div className="postbody" dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        <Ad />
+        <AdSense.Google
+          client="ca-pub-4343024996209944"
+          slot="2071710325"
+          format="auto"/>
       </div>
     )
   }

@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import Link from "gatsby-link";
 import get from "lodash/get"
 import Tags from "../components/tags";
-import Ad from "../components/ad";
+import AdSense from "react-adsense";
 
 const NavLink = props => {
     if (!props.test) {
@@ -41,7 +41,10 @@ const IndexPage = ({pathContext}) => {
                                 &gt;&gt;&gt;
                             </Link></p>
                         </div>
-                        <Ad />
+                        <AdSense.Google
+                            client="ca-pub-4343024996209944"
+                            slot="2071710325"
+                            format="auto" />
                     </div>
                 )
             })}
