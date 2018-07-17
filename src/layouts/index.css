@@ -63,6 +63,7 @@ header {
 
 footer {
     margin-top: 3rem;
+    margin-bottom: 2rem;
     height: 2rem;
     width: 95%;
     font-size: 75%;
@@ -205,5 +206,5 @@ a:hover {
 }
 
 .ad {
-    margin: 3rem 0;
+    margin: 5rem 0;
 }
