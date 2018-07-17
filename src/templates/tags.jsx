@@ -24,10 +24,12 @@ const Tags = ({ pathContext, data }) => {
                 })}
             </ul>
 
-            <AdSense.Google
-                client="ca-pub-4343024996209944"
-                slot="2071710325"
-                format="auto" />
+            <div class="ad">
+                <AdSense.Google
+                    client="ca-pub-4343024996209944"
+                    slot="2071710325"
+                    format="auto" />
+            </div>
         </div>
     );
 };
