@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
         </div>
         <div className="postbody" dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        <div class="ad">
+        <div className="ad">
           <AdSense.Google
             client="ca-pub-4343024996209944"
             slot="2071710325"
