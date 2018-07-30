@@ -14,7 +14,7 @@ class BlogPostTemplate extends React.Component {
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`}>
           <meta name="og:title" content={post.frontmatter.title} />
           <meta name="og:description" content={post.excerpt} />
-          <meta name="og:image" content="logo_icon_128.png" />
+          <meta name="og:image" content="https://spacekey.info/logo_icon_128.png" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@dlspacekey" />
         </Helmet>

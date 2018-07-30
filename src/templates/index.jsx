@@ -24,12 +24,9 @@ const IndexPage = ({pathContext}) => {
             <Helmet title={`${siteTitle}`}>
                 <meta name="og:title" content="Spacekey" />
                 <meta name="og:description" content="Dalian Spacekey Information Technology Ltd." />
-                <meta name="og:image" content="logo_icon_128.png" />
+                <meta name="og:image" content="https://spacekey.info/logo_icon_128.png" />
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@dlspacekey"/>
-                <meta name="twitter:title" content="Spacekey" />
-                <meta name="twitter:image" content="logo_icon_128.png"/>
-                <meta name="twitter:description" content="Dalian Spacekey Information Technology Ltd."/>
             </Helmet>
             {group.map(({ node }) => {
                 const title = get(node, "frontmatter.title") || node.fields.slug;
