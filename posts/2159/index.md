@@ -1,7 +1,7 @@
 ---
 title: "ASP.NET Core+AngularをKestrelで動かしたときに文字化けする"
 date: "2018-07-30"
-tags: ["C#","VisualStudio","ASP.Net Core", "Angular"]
+tags: ["C#","VisualStudio","ASP.NET Core", "Angular"]
 ---
 
 Visual Studio 2017で、ASP.NET Core+Angularで作ったアプリケーションを、Kestrelで実行すると、コンソールの表示があれこれ文字化けします。
