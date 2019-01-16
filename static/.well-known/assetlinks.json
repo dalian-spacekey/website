@@ -1,9 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "info.spacekey.blankapp18",
-    "sha256_cert_fingerprints":
-    ["54:4D:8E:60:5A:4E:DB:A1:B9:2D:6A:5C:4C:42:70:0E:59:D4:5A:55:42:5A:A7:48:0C:36:29:C9:7F:28:1E:1A"]
-  }
-}]
