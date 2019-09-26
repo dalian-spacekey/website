@@ -15,27 +15,18 @@
               {{ end }}
               </li>
             </ul>
-           </nav>
+          </nav>
 
-           <h3 class="subtitle is-3">{{ .Title }}</h3>
-        
+          <h3 class="subtitle is-3">{{ .Title }}</h3>
+
           <div class="level">
-
             <div class="level-left">
-              <div class="tags">
-                {{ range .Params.tags }}
-                <a href="{{ "tags/" | absURL }}{{ . | urlize }}"><span class="tag is-white">{{ . }}</span></a>
-                {{ end }}
-              </div>
-            </div>
-
-            <div class="level-right">
-              {{ if .Date }}
-              {{ .Date.Format "January 2, 2006" }}
-              {{ end }}
+            {{ if .Date }}
+            {{ .Date.Format "January 2, 2006" }}
+            {{ end }}
             </div>
           </div>
-
+          
           <div class="content">
             {{ .Content }}
           </div>

@@ -15,4 +15,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs.min.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
+
+  <title>{{ if not .IsHome }}{{ .Title }} |{{ end }} {{ .Site.Title }}</title>
 </head>
