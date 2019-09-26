@@ -2,6 +2,7 @@ baseURL = "https://spacekey.info/"
 title = "SPACEKEY"
 googleAnalytics = "UA-38086284-1"
 copyright = "© 2012-2019 Dalian Spacekey Information Technology Ltd."
+hasCJKLanguage = true
 
 [taxonomies]
   tag = "tags"
