@@ -2,7 +2,7 @@
 layout: post
 title: ASP.NET CoreのAPIサーバーでヘッダを確認する場合の注意事項
 date: 2017-09-20
-tags: [".NET Core","ReactNative"]
+tags: ["NET Core","ReactNative"]
 ---
 
 APIサーバーがASP.NET Core2.0、クライアントがReactNativeで作ったiOSアプリ(fetch)、メソッドを呼ぶ際にはヘッダに「X-HogeHoge-Key」などという感じのキーを指定する仕様、でどうしてもヘッダのキーが認識できない状況が発生。

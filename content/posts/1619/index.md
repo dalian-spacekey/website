@@ -2,7 +2,7 @@
 layout: post
 title: .NET Core 1.0のWebApplicationを1.1にする
 date: 2017-02-08
-tags: [".NET Core","Azure"]
+tags: ["NET Core","Azure"]
 ---
 
 あるアプリのサーバー側を.NET Coreで作ってAzureにホストしているのですが、.NET Coreのバージョンを1.0から1.1にしてみました。Visual Studioは2015です。

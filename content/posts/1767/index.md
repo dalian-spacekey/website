@@ -2,7 +2,7 @@
 layout: post
 title: ASP.NET Core WebアプリケーションのAngularテンプレートのサーバーサイドレンダリングをやめる方法(.NET Core 2.0)
 date: 2017-08-25
-tags: [".NET Core","Angular"]
+tags: ["NET Core","Angular"]
 ---
 
 Visual Studioやdotnet newで作ることのできるAngularのプロジェクトは、最初からサーバーサイドレンダリングに対応したものが出来るのですが、慣れないうちは仕組みがよくわからなかったりとか、もっとシンプルな状態から理解を進めたいときにはややこしくて邪魔になりますので、その辺を削除してみます。

@@ -2,7 +2,7 @@
 layout: post
 title: ASP.NET Core(2.0)のAngularテンプレートでng-bootstrapなどを使おうとするとwebpack --env.prodでエラーが出る話
 date: 2017-09-07
-tags: [".NET Core","Angular"]
+tags: ["NET Core","Angular"]
 ---
 
 ちょっとコンポーネントを使いたくてng-boostrapを入れたら、開発中とかdevbuildの時は問題ないのに、production buildをしようとすると謎のエラーを吐かれます。

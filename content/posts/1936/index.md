@@ -2,7 +2,7 @@
 layout: post
 title: ASP.NET CoreのAngularテンプレートのbootstrapを4に変更する
 date: 2017-09-07
-tags: [".NET Core","Angular"]
+tags: ["NET Core","Angular"]
 ---
 
 ## bootstrapのバージョンアップ
