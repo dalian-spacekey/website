@@ -1,0 +1,8 @@
+<ul class="columns is-multiline">
+  {{ range $key, $value :=.Site.Taxonomies.tags }}
+  <li class="column is-one-third padding-em-half">
+    <a  href="{{ "tags/" | absURL }}{{ $key | urlize }}">{{ $key }}</a>
+    <span>({{ $value.Count }})</span>
+  </li>
+  {{ end }}
+</ul>

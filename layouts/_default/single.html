@@ -1,0 +1,53 @@
+{{ define "main"}}
+
+  {{ partial "header.html" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-fifths">
+          <nav class="breadcrumb is-small">
+            <ul>
+              <li><a href="/">SPACEKEY</a></li>
+              <li>
+              {{ range .Params.tags }}
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+              {{ end }}
+              </li>
+            </ul>
+           </nav>
+
+           <h3 class="subtitle is-3">{{ .Title }}</h3>
+        
+          <div class="level">
+
+            <div class="level-left">
+              <div class="tags">
+                {{ range .Params.tags }}
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}"><span class="tag is-white">{{ . }}</span></a>
+                {{ end }}
+              </div>
+            </div>
+
+            <div class="level-right">
+              {{ if .Date }}
+              {{ .Date.Format "January 2, 2006" }}
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="content">
+            {{ .Content }}
+          </div>
+
+          <div class="ad" style="margin: 2rem 0;">
+            {{ partial "ad.html" . }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "footer.html" . }}
+
+{{ end }}

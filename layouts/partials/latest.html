@@ -1,0 +1,8 @@
+<ul>
+  {{ $pages := .Site.RegularPages }}
+  {{ range (first 10 $pages) }}
+    <li style="margin:0.8em;">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>({{ .Date.Format "2006-01-02" }})
+    </li>
+  {{ end }}
+</ul>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "head.html" .}}
+
+<body>
+  <section class="hero has-background-grey is-fullheight">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-narrow">
+          <p class="top-logo">
+        </div>
+        <div class="column">
+          <h1 class="title has-text-white">SPACEKEY</h1>
+          <h2 class="subtitle has-text-white ">Technical Memorandum</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="tile is-ancestor">
+      <div class="tile is-5 is-vertical is-parent">
+        <div class="tile is-child box">
+          <h3 class="subtitle is-3"><a name="latest_post"></a>Latest posts</h3>
+
+          {{ partial "latest.html" .}}
+
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child box">
+          <h3 class="subtitle is-3"><a name="tags"></a>Tags</h3>
+
+          {{ partial "tags.html" .}}
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "footer.html" . }}
+
+</body>
+</html>

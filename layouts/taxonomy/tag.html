@@ -1,0 +1,37 @@
+{{ define "main"}}
+
+  {{ partial "header.html" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-fifths">
+          <nav class="breadcrumb is-small">
+            <ul>
+              <li><a href="/">SPACEKEY</a></li>
+              <li><a href="/#tags">Tags</a></li>
+              <li class="is-active"><a href="#">{{ .Name }}</a></li>
+            </ul>
+          </nav>
+
+          <h3 class="subtitle is-3">{{ .Name }}</h3>
+          
+          <ul id="list">
+            {{ range .Data.Pages }}
+            <li class="padding-em-half">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>({{ .Date.Format "2006-01-02" }})
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad" style="margin: 2rem 0;">
+      {{ partial "ad.html" . }}
+  </div>
+  
+  {{ partial "footer.html" . }}
+
+{{ end }}

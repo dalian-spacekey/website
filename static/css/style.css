@@ -1,0 +1,44 @@
+.top-logo {
+  background: white; 
+  background-image: url('../img/logo.png'); 
+  background-size: 80px 80px; 
+  background-position: center; 
+  border-radius: 50%;
+  width:64px;
+  height:64px;
+}
+
+.padding-em-half {
+  padding: 0.25em;
+}
+
+pre {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.content p {
+  line-height: 1.8em;
+}
+
+.content h2 {
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.content h3 {
+  color: #4a4a4a;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.em;
+}
+
+.menuicons a {
+  color: #6a6a6a;
+}
+
+.menuicons a:hover {
+  color: #8a8a8a;
+}

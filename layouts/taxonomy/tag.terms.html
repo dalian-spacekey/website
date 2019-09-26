@@ -1,0 +1,31 @@
+{{ define "main"}}
+
+{{ partial "header.html" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-fifths">
+          <div>
+            <nav class="breadcrumb is-small">
+              <ul>
+                <li><a href="/">SPACEKEY</a></li>
+              </ul>
+            </nav>
+
+            <h3 class="subtitle is-3"><a name="tags"></a>Tags</h3>
+
+            {{ partial "tags.html" .}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad" style="margin: 2rem 0;">
+      {{ partial "ad.html" . }}
+  </div>
+
+{{ partial "footer.html" . }}
+
+{{ end }}
