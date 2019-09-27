@@ -1,5 +1,5 @@
 ---
-title: "ホームかどうか判断してtitleタグの内容を変える"
+title: "[HUGO]ホームかどうか判断してtitleタグの内容を変える"
 date: "2019-09-26 1:00:00"
 tags: ["Hugo"]
 ---
@@ -7,6 +7,8 @@ tags: ["Hugo"]
 titleタグが出力出来ていなかったので対応していきます。
 
 <!--more-->
+
+素材はこのサイトです。[dalian-spacekey/website](https://github.com/dalian-spacekey/website)
 
 ## 仕様
 

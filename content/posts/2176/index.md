@@ -1,5 +1,5 @@
 ---
-title: "OGPのtitleとdescriptionタグを動的に出力する"
+title: "[HUGO]OGPのtitleとdescriptionタグを動的に出力する"
 date: "2019-09-26 2:00:00"
 tags: ["Hugo"]
 ---
@@ -9,6 +9,8 @@ tags: ["Hugo"]
 ![tweet_before](tweet1.png)
 
 <!--more-->
+
+素材はこのサイトです。[dalian-spacekey/website](https://github.com/dalian-spacekey/website)
 
 ## 仕様
 
@@ -78,3 +80,4 @@ titleタグが出力出来ていなかったので対応していきます。
 ※この記事のやつだけど一応修正出来たよってことで…
 
 ![tweet_after](tweet2.png)
+
