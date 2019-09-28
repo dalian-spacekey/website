@@ -1,0 +1,193 @@
+{{ define "main"}}
+
+  {{ partial "header.html" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-fifths">
+          <nav class="breadcrumb is-small">
+            <ul>
+              <li><a href="/">SPACEKEY</a></li>
+              <li>
+              {{ range .Params.tags }}
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+              {{ end }}
+              </li>
+            </ul>
+          </nav>
+
+          <h3 class="subtitle is-3">{{ .Title }}</h3>
+
+          <div class="level">
+            <div class="level-left">
+            {{ if .Date }}
+            {{ .Date.Format "January 2, 2006" }}
+            {{ end }}
+            </div>
+          </div>
+          
+          <div class="content">
+            {{ .Content }}
+          </div>
+
+          <h5 class="subtitle is-5">Site Variables</h5>
+
+          <table class="table is-fullwidth">
+            <thead>
+            <tr>
+              <th>Variable</th>
+              <th>Value(this site)</th>
+              <th>Description</th>
+            </tr>
+            </thead>
+            <tr>
+              <td>.Site.AllPages</td>
+              <td>{{ .Site.AllPages }}</td>
+              <td>サイト内の全ページ。自動生成されるものもすべて含まれる</td>
+            </tr>
+            <tr>
+              <td>.Site.Author</td>
+              <td>{{ .Site.Author }}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>.Site.BaseURL</td>
+              <td>{{ .Site.BaseURL }}</td>
+              <td>configのbaseUrl。hugo serverで動かすとローカルのものになる</td>
+            </tr>
+            <tr>
+              <td>.Site.BuildDrafts</td>
+              <td>{{ .Site.BuildDrafts }}</td>
+              <td>configのbuildDrafts</td>
+            </tr>
+            <tr>
+              <td>.Site.Copyright</td>
+              <td>{{ .Site.Copyright }}</td>
+              <td>configのcopyright</td>
+            </tr>
+            <tr>
+              <td>.Site.Data</td>
+              <td>{{ .Site.Data }}</td>
+              <td>dataディレクトリにあるデータ</td>
+            </tr>
+            <tr>
+              <td>.Site.DisqusShortname</td>
+              <td>{{ .Site.DisqusShortname }}</td>
+              <td>Disqus設定</td>
+            </tr>
+            <tr>
+              <td>.Site.GoogleAnalytics</td>
+              <td>{{ .Site.GoogleAnalytics }}</td>
+              <td>Google Analyticsのサイトコード</td>
+            </tr>
+            <tr>
+              <td>.Site.Home</td>
+              <td>{{ .Site.Home }}</td>
+              <td>ホームにあたるページ情報</td>
+            </tr>
+            <tr>
+              <td>.Site.IsMultiLingual</td>
+              <td>{{ .Site.IsMultiLingual }}</td>
+              <td>多言語対応されているか</td>
+            </tr>
+            <tr>
+              <td>.Site.IsServer</td>
+              <td>{{ .Site.IsServer }}</td>
+              <td>ビルトインサーバー(hugo server)かどうか</td>
+            </tr>
+            <tr>
+              <td>.Site.Language.Lang</td>
+              <td>{{ .Site.Language.Lang }}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>.Site.Language.LanguageName</td>
+              <td>{{ .Site.Language.LanguageName }}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>.Site.Language.Weight</td>
+              <td>{{ .Site.Language.Weight }}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>.Site.Language</td>
+              <td>{{ .Site.Language }}</td>
+              <td>現在の言語</td>
+            </tr>
+            <tr>
+              <td>.Site.LanguageCode</td>
+              <td>{{ .Site.LanguageCode }}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>.Site.LanguagePrefix</td>
+              <td>{{ .Site.LanguagePrefix }}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>.Site.Languages</td>
+              <td>{{ .Site.Languages }}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>.Site.LastChange</td>
+              <td>{{ .Site.LastChange }}</td>
+              <td>最終更新日。contentの中のdateが一番新しいもの</td>
+            </tr>
+            <tr>
+              <td>.Site.Menus</td>
+              <td>{{ .Site.Menus }}</td>
+              <td>configで設定したメニューリスト</td>
+            </tr>
+            <tr>
+              <td>.Site.Pages</td>
+              <td>{{ .Site.Pages }}</td>
+              <td>サイトに含まれるページ(dateが新しい順)。現在の言語のページだけが出る</td>
+            </tr>
+            <tr>
+              <td>.Site.RegularPages</td>
+              <td>{{ .Site.RegularPages }}</td>
+              <td>Pageデータだけのリスト。自動生成されるリストなどは含まれない</td>
+            </tr>
+            <tr>
+              <td>.Site.Sections</td>
+              <td>{{ .Site.Sections }}</td>
+              <td>サイトのトップレベルディレクトリのリスト</td>
+            </tr>
+            <tr>
+              <td>.Site.Taxonomies</td>
+              <td>{{ .Site.Taxonomies }}</td>
+              <td>分類のリスト</td>
+            </tr>
+            <tr>
+              <td>.Site.Title</td>
+              <td>{{ .Site.Title }}</td>
+              <td>configのtitle</td>
+            </tr>
+            <tr>
+              <td>.Site.Params</td>
+              <td>{{ .Site.Params }}</td>
+              <td>configの[params]で指定したものがmapで入る</td>
+            </tr>
+            <tfoot>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value(this site)</th>
+                  <th>Description</th>
+                </tr>
+            </tfoot>
+          </table>
+
+          <div class="ad">
+            {{ partial "ad.html" . }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "footer.html" . }}
+
+{{ end }}
