@@ -1,0 +1,26 @@
+{{ $url := .Get 0 }}
+{{ $function := print (getenv "SOCIALMETADATA_ENDPOINT") "&" (querify "url" $url )}}
+{{ $json := getJSON $function }}
+
+<div class="linkcard">
+  <a href="{{ $url | safeHTMLAttr }}" target="_blank"></a>
+
+  {{ with $json.ogImage }}
+  <div class="linkcard-left">
+    <img src="{{ . | safeHTMLAttr }}"/>
+  </div>
+  {{ end }}
+  {{ with $json.title }}
+  <div class="linkcard-right linkcard-title">
+    {{ $json.title }}
+  </div>
+  {{ end }}
+  <div class="linkcard-right linkcard-url">
+    {{ $json.url }}
+  </div>
+  {{ with $json.ogDescription }}
+  <div class="linkcard-right linkcard-description">
+    {{ $json.ogDescription }}
+  </div>
+  {{ end }}
+</div>
