@@ -19,8 +19,8 @@ tags: ["Hugo"]
 
 ## 実装
 
-* meta name="og:title"は、content="{{ .Title }}
-* meta name="og:description"は、content="{{ .Summary }}
+* meta property="og:title"は、content="{{ .Title }}
+* meta property="og:description"は、content="{{ .Summary }}
 
 とそれぞれ出力するようにhead.htmlを書きかえるだけですが、descriptionの方は別の所にも工夫が必要です。
 
@@ -28,8 +28,8 @@ tags: ["Hugo"]
 
 
 ``` html
-  <meta name="og:title" content="{{ .Title }}" />
-  <meta name="og:description" content="{{ .Summary }}" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Summary }}" />
 ```
 
 ## 要約(Summary)
@@ -71,8 +71,8 @@ titleタグが出力出来ていなかったので対応していきます。
 ## 出力結果
 
 ```html
-<meta name="og:title" content="ホームかどうか判断してtitleタグの内容を変える" />
-<meta name="og:description" content="titleタグが出力出来ていなかったので対応していきます。" />
+<meta property="og:title" content="ホームかどうか判断してtitleタグの内容を変える" />
+<meta property="og:description" content="titleタグが出力出来ていなかったので対応していきます。" />
 ```
 
 こういう感じで出力されるようになりました。  
@@ -81,3 +81,7 @@ titleタグが出力出来ていなかったので対応していきます。
 
 ![tweet_after](tweet2.png)
 
+## 訂正(2019-09-30)
+
+meta propertyをmeta nameと記載していたので修正しました。  
+nameでもtwitterのリンクはちゃんと認識されてましたけど、正式にはpropertyなので出力も併せて対応しました。
