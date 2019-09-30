@@ -1,7 +1,7 @@
 ---
 title: "[AzureFunctions]指定されたURLを読んでmetaタグの一部を取得する"
 date: "2019-09-29 0:00:00"
-tags: ["Azure", "C#"]
+tags: ["Azure", "Csharp"]
 ---
 
 Azure FunctionsはHello World的なところで止まっていたので、HUGOの方で必要になったものを作ってみました。
