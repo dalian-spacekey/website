@@ -4,6 +4,11 @@ date: "2019-10-16 0:00:00"
 tags: ["Slack"]
 ---
 
+※4.2.0になって編集するファイルが変わりました。
+
+{{<linkcard "https://spacekey.info/posts/2184/">}}
+
+
 Windows版Slackの日本語フォント表示がひどすぎるので変更する方法。
 
 <!--more-->
